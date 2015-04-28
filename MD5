@@ -1,0 +1,8 @@
+6d57b97201f94e22c3567976e4477c2a *DESCRIPTION
+ac892a7bbe33f885a331c86ae594cb10 *LICENSE
+41649c5e54df85facf549ad30f64a0ba *NAMESPACE
+06db4186ace69badf3f488dd6462e4cb *R/rand_names.R
+7e9f872ff4acdbe263666d49c5a42c22 *README.md
+a121fd7d0e6e622def667eb41f4bacf7 *man/rand_names.Rd
+f8a220a1655f9d00341381d25806efcb *tests/testthat.R
+fd29bb06fc6ba041f352e5ed7cf6aa2d *tests/testthat/test_rand_names.R
