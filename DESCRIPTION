@@ -1,6 +1,6 @@
 Package: randNames
 Title: Package Provides Access to Fake User Data
-Version: 0.2
+Version: 0.2.1
 Authors@R: person("Karthik", "Ram", email = "karthik.ram@gmail.com", role = c("aut", "cre"))
 Description: Generates random names with additional information including fake SSNs, gender, location, zip, age, address, and nationality.
 Depends: R (>= 3.1.2)
@@ -11,8 +11,8 @@ LazyData: true
 Imports: dplyr, httr, jsonlite
 Suggests: gender, testthat
 NeedsCompilation: no
-Packaged: 2015-04-28 06:21:14 UTC; karthik
+Packaged: 2015-08-03 22:12:00 UTC; karthik
 Author: Karthik Ram [aut, cre]
 Maintainer: Karthik Ram <karthik.ram@gmail.com>
 Repository: CRAN
-Date/Publication: 2015-04-28 09:03:47
+Date/Publication: 2015-08-04 00:33:38
