@@ -1,8 +1,8 @@
-677dca7e9e8cfde7a339296ffc4db401 *DESCRIPTION
+1e9a82410c2c95d9c749e194d21ff17f *DESCRIPTION
 ac892a7bbe33f885a331c86ae594cb10 *LICENSE
-41649c5e54df85facf549ad30f64a0ba *NAMESPACE
-121598ce90f1a3775c49445f6ead0767 *R/rand_names.R
-4e881629be65d9b257db4727f7309497 *README.md
-38ec0f9baa69be112df1aae6b389e359 *man/rand_names.Rd
+737de84ab09febc9ca9f85d1fb02d8ea *NAMESPACE
+e5db1c22e315b423b5d1a5671a4d73ff *R/rand_names.R
+127ee188ff8f6c38cf6a0fcf6be0ed6a *README.md
+8fc3f34f3833694cf63c75fc3ecdab71 *man/rand_names.Rd
 f8a220a1655f9d00341381d25806efcb *tests/testthat.R
 fd29bb06fc6ba041f352e5ed7cf6aa2d *tests/testthat/test_rand_names.R

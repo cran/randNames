@@ -18,18 +18,16 @@
 #' @param key An API key for more results per request (500 max for registered RandomAPI users).
 #' @import httr
 #' @importFrom jsonlite fromJSON
-#' @importFrom dplyr tbl_df rbind_all
+#' @importFrom tibble tbl_df 
 #' @export
 #' @examples
-#' library(dplyr)
-#' 5 %>%
-#' rand_names %>%
-#' select(first = user.name.first, last = user.name.last)
+#' data <- rand_names(5)
+#' # dplyr::select(data, first = name.first, last = name.last)
 #'
 #'  # x <- 5 %>%
 #'  #   rand_names %>%
-#'  # dplyr::filter(user.gender == "female") %>%
-#'  #  dplyr::select(user.name.first, user.name.last)
+#'  # dplyr::filter(gender == "female") %>%
+#'  #  dplyr::select(name.first, name.last)
 rand_names <- function(n = 1, seed = NULL, gender = NULL, nationality = NULL, key = NULL) {
   ee_compact <- function(l) Filter(Negate(is.null), l)
   args <- ee_compact(as.list(c(results = n, seed = seed, gender = gender, nat = nationality, key = key)))
