@@ -2,7 +2,10 @@
 # Random names
 
 [![Travis-CI Build Status](https://travis-ci.org/karthik/randNames.png?branch=master)](https://travis-ci.org/karthik/randNames)  
-[![Coverage Status](https://coveralls.io/repos/karthik/randNames/badge.svg)](https://coveralls.io/r/karthik/randNames)
+[![Coverage Status](https://coveralls.io/repos/karthik/randNames/badge.svg)](https://coveralls.io/r/karthik/randNames)  
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/randNames)](https://cran.r-project.org/package=randNames)
+
+The package provides a programmatic interface to the Random Names API and returns 'sample' user data including fake first/last names, emails, SSNs, addresses, avatars and more. Search queries can be further filtered by gender and nationality.
 
 
 
@@ -62,7 +65,8 @@ __Filter by nationality__
 
 ```r
 15 %>% 
-# Currently takes only US or GB. More coming.
+# Available nationalities: AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NL, NZ, TR, US
+# You can specify multiple nationalities. e.g. "gb, us"
   rand_names(nationality = "GB") %>%  
   select(name.first, name.last)
 ```
@@ -71,28 +75,29 @@ __Filter by nationality__
 #> Source: local data frame [15 x 2]
 #> 
 #>    name.first name.last
-#>         (chr)     (chr)
-#> 1     douglas   kennedy
-#> 2       julio fernandez
-#> 3       lance      diaz
-#> 4        erin   mendoza
-#> 5     melissa   perkins
-#> 6       mandy     adams
-#> 7     alfredo  thompson
-#> 8       becky mcdonalid
-#> 9       emily     craig
-#> 10     jerome     wells
-#> 11       gary    porter
-#> 12   isabella   sanders
-#> 13     tracey     dixon
-#> 14       raul    davies
-#> 15      linda    tucker
+#>         <chr>     <chr>
+#> 1       susan hernandez
+#> 2      hector   jenkins
+#> 3     caitlin    rhodes
+#> 4     gregory  jennings
+#> 5       vicki    fuller
+#> 6   christian    gibson
+#> 7       riley   holland
+#> 8      ronald      boyd
+#> 9         sam   jimenez
+#> 10       ivan armstrong
+#> 11       joey     grant
+#> 12      alice  lawrence
+#> 13     austin    davies
+#> 14   florence      ward
+#> 15      ruben     meyer
 ```
 
 __Filter by gender__
 
 
 ```r
+library(randNames)
 15 %>% 
   rand_names(gender = "female") %>% 
   select(name.first, name.last)
@@ -101,23 +106,23 @@ __Filter by gender__
 ```
 #> Source: local data frame [15 x 2]
 #> 
-#>    name.first    name.last
-#>         (chr)        (chr)
-#> 1     abigail        sirko
-#> 2   annemarie         kern
-#> 3     kristin      gerlach
-#> 4      claire      legrand
-#> 5      alicia      olivier
-#> 6      shayna van de burgt
-#> 7  clémentine     gauthier
-#> 8        آوین      نكو نظر
-#> 9        آوین         کوتی
-#> 10     minttu        salmi
-#> 11     مرسانا      محمدخان
-#> 12    candice      holland
-#> 13       anni        saksa
-#> 14      tessa     gaillard
-#> 15         la    de kruijf
+#>    name.first   name.last
+#>         <chr>       <chr>
+#> 1      neline   koebrugge
+#> 2    kimberly    marshall
+#> 3        هلیا سلطانی نژاد
+#> 4        zaza    van vark
+#> 5     heloísa       moura
+#> 6      andrea       white
+#> 7     maëline        joly
+#> 8     claudia    santiago
+#> 9     matilda       lampo
+#> 10       ruby       jones
+#> 11      nanna     thomsen
+#> 12    abigail        wood
+#> 13     lucile        roux
+#> 14       بیتا       حیدری
+#> 15      paige      walker
 ```
 
 
@@ -134,7 +139,7 @@ __Set seed__
 #> Source: local data frame [15 x 2]
 #> 
 #>    name.first  name.last
-#>         (chr)      (chr)
+#>         <chr>      <chr>
 #> 1       becky       sims
 #> 2      amelia   anderson
 #> 3       vilho   lampinen
@@ -154,6 +159,8 @@ __Set seed__
 
 __Additional fields beyond first and last name__
 
+
+```
 gender  
 email  
 registered"        
@@ -178,4 +185,5 @@ id.name
 id.value  
 picture.large  
 picture.medium     
-picture.thumbnail  
+picture.thumbnail 
+```

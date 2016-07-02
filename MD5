@@ -1,8 +1,9 @@
-1e9a82410c2c95d9c749e194d21ff17f *DESCRIPTION
+c0f364b8a93cec2f0e8c666e34e6aab9 *DESCRIPTION
 ac892a7bbe33f885a331c86ae594cb10 *LICENSE
-737de84ab09febc9ca9f85d1fb02d8ea *NAMESPACE
-e5db1c22e315b423b5d1a5671a4d73ff *R/rand_names.R
-127ee188ff8f6c38cf6a0fcf6be0ed6a *README.md
-8fc3f34f3833694cf63c75fc3ecdab71 *man/rand_names.Rd
+888b9ec2be071c2069c6c9e603cb10d3 *NAMESPACE
+555e4326a89b4cd439811045c62f5cbb *NEWS.md
+d8088b5b5847c86be10693827f164648 *R/rand_names.R
+09d2dd54228f4e8accda278f75069391 *README.md
+ff2e2ad1acc34b658810085f34ec5742 *man/rand_names.Rd
 f8a220a1655f9d00341381d25806efcb *tests/testthat.R
 fd29bb06fc6ba041f352e5ed7cf6aa2d *tests/testthat/test_rand_names.R
